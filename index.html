@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Test</title>
+    <script src="jquery/jquery-1.12.3.min.js" type="text/javascript" language="javascript"></script>
+</head>
+<body>
+
+<form id="upload" action="ajaxupl/upload3.php" method="POST" enctype="multipart/form-data">
+ 
+<fieldset>
+<legend>File Upload</legend>
+ 
+<input type="hidden" id="MAX_FILE_SIZE" name="MAX_FILE_SIZE" value="600000" />
+<input type="hidden" id="omod"  name="omod" value="docmedia" />
+<input type="hidden" id="dcid"  name="dcid" value="<#docid>">
+<input type="hidden" id="ln"    name="lan"  value="<#lan>">
+<input type="text" id="uplfr" name="uplfr"  value="Antons">
+ <!---->
+<!--<div>-->
+                <!--<label for="fileselect">Files to upload:</label>-->
+                <!--<input type="file" id="fileselect" name="fileselect[]" multiple />-->
+                <!--<div id="filedrag">or drop files here</div>-->
+<!--</div>-->
+
+    <!--<div id="submitbutton">-->
+        <!--<button type="submit">Upload Files</button>-->
+    <!--</div>-->
+    <!---->
+
+    <input type="file" id="file" name="file[]" size="10" multiple  />
+    <input id="uploadbutton" type="button" value="Upload"/>
+
+    <button type="reset">Reset</button>
+</fieldset>
+    <br>
+    <input type="submit" id="submit" value="submit">
+</form>
+<div id="progress"></div>
+<div id="messages">
+<p>Status Messages</p>
+</div>
+</p>
+
+<!-- <script src="ajaxupl/filedrag.js"></script> -->
+<script src="filedrag1/fileuploader.js"></script>
+
+</body>
+</html>
